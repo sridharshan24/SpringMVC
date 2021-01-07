@@ -23,6 +23,7 @@ public class welcome_controller {
 		ModelAndView mv = new ModelAndView();
 		if(user.getPassword().equals("admin"))
 		{
+			System.out.println("Success in login");
 			mv.setViewName("welcome");
 			mv.addObject("user", user);
 		}
